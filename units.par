@@ -1,0 +1,10 @@
+0.0065		!D dimensional
+18.0d0		!DomonioX_Dimensional El la longitud del dominio en x
+21.60d0		!DomonioY_Dimensional El la longitud del dominio en y
+18.0d0		!DomonioZ_Dimensional El la longitud del dominio en z
+1		!t dimensional -en dias si hay proliferacion, en horas si no- 
+0.0120d0	!rho dimensional, es decir taza de muerte o creciemiento -(1/dia)- 
+0.50d0		!r_tumorDimensional, el radio del tumor inicial -en cm-
+0.0d0		!Lugar en donde quieres que vaya el tumor en x EN CENTIMETROS 
+0.0d0		!Lugar en donde quieres que vaya el tumor en y EN CENTIMETROS 
+0.0d0		!Lugar en donde quieres que vaya el tumor en z EN CENTIMETROS 
