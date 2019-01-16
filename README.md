@@ -3,7 +3,7 @@ Code capable of simulating numerically in three dimensions the spatio-temporal e
 The results given by this code were verified by comparing them with previous numerical and clinical results. 
 
 ### Notes:
-Please save all the documents in the same file and firts unzip the BrainGW file. This codes uses Fortran 90 and gnuplot as a visualizer.
+Please save all the documents in the same file and firts unzip the BrainGW file. This code uses Fortran 90 and gnuplot as a visualizer.
 
 ## Project:
 The whole project is composed of:
@@ -15,7 +15,7 @@ save2Dxy.f90, save2Dyz.f90 and save2Dzx.f90
 Input files specifying some parameters and units:
 input.par, units.par
 
-An other input file with information about anatomy of the brain which interpreted in defineD.f90:
+Another input file with information about anatomy of the brain which interpreted in defineD.f90:
 BrainGW
 
 A file to generate a plot with the resultig data:
