@@ -3,38 +3,38 @@ Code capable of simulating numerically in three dimensions the spatio-temporal e
 The results caclulated with this code can be compared with previous numerical and clinical results. 
 
 ### Notes:
-Please save all the documents in the same file and firts unzip the BrainGW file. This code uses Fortran 90 and gnuplot as a visualizer.
+Save all the files in the same directory and unzip the BrainGW file. This code uses Fortran 90 and produces output suitable for gnuplot as a visualizer.
 
 ## Project:
 The whole project is composed of:
 main.f90, defineD.f90, dimensionless_time.f90, discret_domain.f90, grid_lengths.f90, parameters.f90, read_parameters.f90 
 
-Some saving files which will generate the output data: 
+Files generating the output data: 
 save2Dxy.f90, save2Dyz.f90 and save2Dzx.f90
 
 Input files specifying some parameters and units:
 input.par, units.par
 
-Another input file with information about anatomy of the brain which interpreted in defineD.f90:
+Another -essential- input file with information about anatomy of the brain which is interpreted with defineD.f90:
 BrainGW
 
 A file to generate a plot with the resultig data:
 NumericalMRI.gnu
 
-And a Makefile to compile the project using:
+And a Makefile to compile the project that works using:
 ```
 make Tumor3D
 ```
-which generates xTumor. To run it, type in the same folder:
+which generates the binary executable xTumor. To run it, type in the same folder:
 ```
 ./xTumor
 ```
 
-Using the sugested parameters, the simulations will run for about an hour using only one core. 
+Using the sugested parameters, the simulations will run for about an hour (consider this serial version allows the use of only one core). 
 
 ### Ploting
 To generate the plot, type
 ```
 gnuplot NumericalMRI.gnu
 ```
-and open the .eps file. 
+that will produce an .eps file. 
