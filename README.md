@@ -2,7 +2,10 @@
 Code capable of simulating numerically in three dimensions the spatio-temporal evolution of cancerous brain tumors, based on the reaction-diffusion equation and its numerical solution. The code was also tested to show the validity of the usage of reaction diffusion models for the study of this kind of tumors. It has the numerical tools that allow the use of anatomically realistic human brain geometries in three dimensions. The importance of a geometrically accurate anatomy lies in the fact that tumors diffuse at different speed in grey or white matter. Whit such anatomy, an analysis of the numerical evolution of different types of tumors undergoing diverse initial conditions and different positions inside the brain allows us to even estimate the deadliness of the simulated tumor. 
 The results given by this code were verified by comparing them with previous numerical and clinical results. 
 
-## Notes:
+### Notes:
+Please save all the documents in the same file and firts unzip the BrainGW file. This codes uses Fortran 90 and gnuplot as a visualizer.
+
+## Project:
 The whole project is composed of:
 main.f90, defineD.f90, dimensionless_time.f90, discret_domain.f90, grid_lengths.f90, parameters.f90, read_parameters.f90 
 
