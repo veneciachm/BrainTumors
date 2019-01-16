@@ -12,6 +12,9 @@ save2Dxy.f90, save2Dyz.f90 and save2Dzx.f90
 Input files specifying some parameters and units:
 input.par, units.par
 
+An other input file with information about anatomy of the brain which interpreted in defineD.f90:
+BrainGW
+
 A file to generate a plot with the resultig data:
 NumericalMRI.gnu
 
@@ -24,4 +27,11 @@ which generates xTumor. To run it, type in the same folder:
 ./xTumor
 ```
 
-Using the sugested parameters, the simulations will run for about an hour using only one core.  
+Using the sugested parameters, the simulations will run for about an hour using only one core. 
+
+### Ploting
+To generate the plot, type
+```
+gnuplot NumericalMRI.gnu
+```
+and open the .eps file. 
