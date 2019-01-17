@@ -1,10 +1,10 @@
-0.0065		!D dimensional
-18.0d0		!DomonioX_Dimensional El la longitud del dominio en x
-21.60d0		!DomonioY_Dimensional El la longitud del dominio en y
-18.0d0		!DomonioZ_Dimensional El la longitud del dominio en z
-1		!t dimensional -en dias si hay proliferacion, en horas si no- 
-0.0120d0	!rho dimensional, es decir taza de muerte o creciemiento -(1/dia)- 
-0.50d0		!r_tumorDimensional, el radio del tumor inicial -en cm-
-0.0d0		!Lugar en donde quieres que vaya el tumor en x EN CENTIMETROS 
-0.0d0		!Lugar en donde quieres que vaya el tumor en y EN CENTIMETROS 
-0.0d0		!Lugar en donde quieres que vaya el tumor en z EN CENTIMETROS 
+0.0065		!Diffusion coefficient for white matter with dimensions established in literature.
+18.0d0		!DomainX_Dimensional: Dimensions of an average brain 
+21.60d0		!DomainY_Dimensional: Dimensions of an average brain
+18.0d0		!DomainZ_Dimensional: Dimensions of an average brain
+1		!Dimensional time: Days with proliferation, hours without it. 
+0.0120d0	!rho dimensional: Proliferation rate (1/day). 
+0.50d0		!r_tumorDimensional: Initial radio of the tumor -cm-
+-4.0d0		!x-position of the tumor in centimeters. 
+0.0d0		!y-position of the tumor in centimeters. 
+2.0d0		!z-position of the tumor in centimeters. 

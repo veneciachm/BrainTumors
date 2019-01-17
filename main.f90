@@ -54,20 +54,26 @@ program main
 		do j=0, Ny
 			do i=0, Nx
 				!----------------------CANCER CELLS POPULATION-----------------------
-				if( ( (x(i,j,h)-xTumorAdim)**2.0d0 + (y(i,j,h)-yTumorAdim)**2.0d0 + (z(i,j,h)-zTumorAdim)**2.0d0) .le. (r_tumorAdim)**2) then
-					phi(i,j,h)  = 0.07663106 
-					ip=i 
-					jp=j
-					hp=h
+				if( sqrt( (x(i,j,h)-xTumorAdim)**2.0d0 + (y(i,j,h)-yTumorAdim)**2.0d0 + &
+                        (z(i,j,h)-zTumorAdim)**2.0d0) .le. 2.0d0 *(r_tumorAdim)) then
+                    phi(i,j,h)= 1.5d0*0.1380d0 * exp(-(  ((x(i,j,h)-xTumorAdim)**2 + (y(i,j,h)-yTumorAdim)**2 + &
+                                (z(i,j,h)-zTumorAdim)**2)/(2.0d0*r_tumorAdim**2) ) )
+                    !phi(i,j,h)  = 0.138 !0.07663106
+					!ip=i
+					!jp=j
+					!hp=h
 				else 
 					phi(i,j,h)  = 0.0d0
 				end if
 			end do 
 		end do
 	end do
-	
-	
-	call dimensionless_time() 				
+
+    ip= (xTumorAdim - xmin)/dx
+    jp= (yTumorAdim - ymin)/dy
+    hp= (zTumorAdim - zmin)/dz
+
+	call dimensionless_time()
 	call save2Dxy(0, hp)		
 	call save2Dyz(0, ip)
 	call save2Dzx(0, jp)

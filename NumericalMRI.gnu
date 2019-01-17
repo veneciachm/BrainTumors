@@ -17,18 +17,17 @@ set mytics 4
 set pm3d map
 unset colorbox
 
-splot 'Sal3xyF' u (-$1):2:13 i 0
+splot 'MRIxy' u (-$1):2:17 i 0
 
 unset border
 set origin 0.0,0.0
 set contour
-set cntrparam levels discrete 0.07, 0.076, 0.08, 0.138, 0.140, 0.15, 0.16,  0.19, 0.21, 0.3, 0.4
+set cntrparam levels discrete 0.02, 0.06, 0.1, 0.138, 0.16, 0.1 
 unset surface
 #do for [ii=1:99]{
-	splot 'Sal3xyF' u (-$1):2:14 i 3
-
+	splot 'MRIxy' u (-$1):2:18 i 2
 # every ::1::ii
 #}
-splot 'Sal3xyF' u (-$1):2:14 i 0
+#splot 'MRIxy' u (-$1):2:20 i 0
 unset multiplot
 

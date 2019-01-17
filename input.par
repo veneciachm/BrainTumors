@@ -1,21 +1,20 @@
-2			!1 para mitad y mitad, 2 para malla del cerebro 
-30          !Iter_tiempo, cada cuantas iteraciones va a imprimir  	
+2			!Coefficient: 1 for an invitro experiment, 2 for the anatomically realistic human brain (basen on a MRI) 
+30          		!Iter_tiempo: saving data every Iter_time days, with proliferation or hours without it. Here, every 30 days.
 1.0			!xmax 
--1.0		!xmin
-180			!Nx. Uno menos de los voxels de la MRI, pues empieza en 0 mis x y y y los voxels de 1
-1.0d0		!ymax
--1.0d0		!ymin
-216			!Ny. Uno menos de los voxels de la MRI, pues empieza en 0 mis x y y y los voxels de 1
+-1.0			!xmin
+180			!Nx: Fixed parameter given the spatial restrictions of the brain topology.
+1.0d0			!ymax
+-1.0d0			!ymin
+216			!Ny: Fixed parameter given the spatial restrictions of the brain topology. 
 1.0			!zmax
--1.0		!zmin
-180			!Nz. Uno menos de los voxels de la MRI, pues empieza en 0 mis x y y y los voxels de 1
-1800		!Nt EQUIVALE A 3000 dias
-0.10d0		!courant. Si es RK3 tiene que ser menor que 0.5 para asegurar convergencia.  
-0.20d0		!Coeficiente de diff. materia GRIS -un quinto de Dw-
-1.0d0		!Coeficiente de diff. materia BLANCA -uno pues es el adimensional y esta normalizado con Dw-
-1.00d0		!Rho, taza de crecimiento o muerte. -PONLA CERO SINO HAY PROLIFERACION, UNO SI SI HAY PUES ESTA ADIMENSIONAL Y NORMALIZADO- 
-67.051380d0		!Es el carrying capacity SIN DIMENCIONES 
-'Sal3xyF'
-'Sal3yzF'
-'Sal3zxF'
-
+-1.0			!zmin
+180			!Nz: Fixed parameter given the spatial restrictions of the brain topology. 
+360			!Nt: Equivalent to 90 days of evolution.
+0.10d0			!Courant: less than 0.5 to ensure convergence of the results.  
+0.20d0			!Dg: Diffusion coefficient for grey matter  ( Dw/5 according to literature).
+1.0d0			!Dw: Diffusion coefficient for white matter. Set equal to one because it is dimensionless and normalized.
+1.00d0			!Rho: Proliferation rate. Zero for no proliferation, one for proliferation (dimensionless and normalized). 
+67.051380d0		!kp: Carrying capacity, dimensionless value according to literature. 
+'MRIxy'			!Output file in xy plane	
+'MRIyz'			!Output file in yz plane	
+'MRIzx'			!Output file in zx plane	
