@@ -38,3 +38,6 @@ To generate the plot, type
 gnuplot NumericalMRI.gnu
 ```
 that will produce an .eps file. 
+
+
+![alt text](https://raw.githubusercontent.com/veneciachm/BrainTumors/MRI-like.png)
