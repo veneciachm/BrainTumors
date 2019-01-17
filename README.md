@@ -37,7 +37,7 @@ To generate the plot, type
 ```
 gnuplot NumericalMRI.gnu
 ```
-that will produce an .eps file. 
+that will produce an .eps file, similar to (h) of the next images. By doing some minor modifications to NumericalMRI.gnu the rest of the images can be obtained. 
 
 
-![alt text](https://raw.githubusercontent.com/veneciachm/BrainTumors/MRI-like.png)
+![alt text](https://github.com/veneciachm/BrainTumors/blob/master/MRI-like.png)
