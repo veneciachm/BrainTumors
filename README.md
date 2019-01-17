@@ -4,6 +4,10 @@ The results calculated with this code can be compared with previous numerical an
 
 **How original is it?** ***Totally home made***, no libraries required.
 
+### Author: Venecia Chávez Medina
+* **Affiliation**: Institute of Physics and Mathematics, Universidad Michoacana de San Nicolás de Hidalgo Mexico.
+* **Email**: veneciachm(*at*)ifm.umich.mx
+
 ### Notes:
 Save all the files in the same directory and unzip the BrainGW file. This code uses Fortran 90 and produces output suitable for gnuplot as a visualizer.
 
